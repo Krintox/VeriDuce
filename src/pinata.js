@@ -1,12 +1,14 @@
-require('dotenv').config();
-const key = process.env.API_KEY;
-const secret = process.env.API_SECRET;
+// require('dotenv').config();
+const key = process.env.REACT_APP_API_KEY;
+const secret = process.env.REACT_APP_API_SECRET;
+console.log(key, secret);
 
 const axios = require('axios');
 const FormData = require('form-data');
 
 export const uploadJSONToIPFS = async(JSONBody) => {
-    const url = process.env.PINATA_URL;
+
+    const url = process.env.REACT_APP_PINATA_URL;
     //making axios POST request to Pinata ⬇️
     return axios 
         .post(url, JSONBody, {

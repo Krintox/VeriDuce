@@ -18,7 +18,7 @@ module.exports = {
       chainId: 1337
     },
     sepolia: {
-      url: process.env.ALCHEMY_URL,
+      url: process.env.REACT_APP_ALCHEMY_URL,
       accounts: [ "20f6383a4e6b0249ef4cf058d750f2b5fc5734776fc64e907b2ff79d5705c835" ]
     }
   },
