@@ -1,7 +1,7 @@
 // require('dotenv').config();
 const key = process.env.REACT_APP_API_KEY;
 const secret = process.env.REACT_APP_API_SECRET;
-console.log(key, secret);
+// console.log(key, secret);
 
 const axios = require('axios');
 const FormData = require('form-data');
