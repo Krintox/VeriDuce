@@ -1,6 +1,6 @@
-//require('dotenv').config();
+require('dotenv').config();
 const key = process.env.API_KEY;
-const secret = process.env.API_Secret;
+const secret = process.env.API_SECRET;
 
 const axios = require('axios');
 const FormData = require('form-data');
