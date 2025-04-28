@@ -55,7 +55,7 @@ export default function SellNFT() {
     try {
       updateMessage("Validating carbon project...");
       
-      const response = await fetch('http://127.0.0.1:9654/validate', {
+      const response = await fetch('https://carbon-cred-val.onrender.com/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -93,7 +93,7 @@ export default function SellNFT() {
     try {
       updateMessage("Calculating emissions...");
       
-      const response = await fetch('http://localhost:9515/predict', {
+      const response = await fetch('https://carbon-emmission-predictor.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -138,7 +138,7 @@ export default function SellNFT() {
       console.log(fraudInput);
       console.log("Sending payload:", JSON.stringify({ input: [fraudInput] }));
 
-      const response = await fetch('http://localhost:7919/predict', {
+      const response = await fetch('https://fraud-detector-z9qi.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
